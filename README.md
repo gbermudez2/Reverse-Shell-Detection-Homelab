@@ -1,6 +1,23 @@
 # Reverse-Shell-Detection-Homelab
+## Objective
 
-## SETUP
+This SOC Homelab project tested my knowledge on setting up a network of VMs and being able to perform a simple reverse shell attack to detect such activity.
+
+### Skills Learned
+Deepened understanding of SIEM, SIEM programs, and SIEM functions via practical application.
+Proficiency in analyzing logs and alert information.
+Enhanced knowledge of network protocols and security vulnerabilities regarding possible reverse shell activity.
+Gained insightful knowledge into possible phishing goals used by adversaries.
+
+### Tools Used
+Oracle VirtualBox for Virtualization setup.
+  - Windows 10 VM as the victim machine.
+  - Kali Linux as the attacker machine.
+Splunk for Security Information and Event Management (SIEM) capabilities like log ingestion and analysis.
+Sysmon for Windows Event Log enrichment.
+
+## Steps
+### Setup
 - I used Virtual Box to set up **2 Virtual Machines:**
   1. Kali Linux VM (Pre-configured)
   2. Windows 10 VM
