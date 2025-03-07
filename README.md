@@ -7,6 +7,7 @@ This SOC Homelab project tested my knowledge on setting up a network of VMs and 
 - Deepened understanding of SIEM, SIEM programs, and SIEM functions via practical application.
 - Proficiency in analyzing logs and alert information.
 - Enhanced knowledge of network protocols and security vulnerabilities regarding possible reverse shell activity.
+- Ability to navigate and generate a simple payload using Metasploit.
 - Gained insightful knowledge into possible phishing goals used by adversaries.
 
 ### Tools Used
@@ -15,6 +16,7 @@ This SOC Homelab project tested my knowledge on setting up a network of VMs and 
   - Kali Linux as the attacker machine.
 - Splunk for Security Information and Event Management (SIEM) capabilities like log ingestion and analysis.
 - Sysmon for Windows Event Log enrichment.
+- Metasploit for simulating the reverse shell attack.
 
 ## Steps
 ### Setup
