@@ -42,6 +42,7 @@
 
 - On my Windows 10 VM, I used my Kali's IP address and port to download the file.
   - In my case, it's hxxp[://]192[.]168[.]68[.]107:8080/resume[.]pdf[.]exe
+  - Side note: every time I restarted my VMs, the IPs changed, so I had to create new payloads every single time. I realized this while trying to download the payload and wondered why it wouldn't work.
   
 ![image](https://github.com/user-attachments/assets/9a944012-3f7a-4b97-8949-0720066a29d0) ![image](https://github.com/user-attachments/assets/ff3e2492-dc34-42c3-a9a6-f97b88b539f6)
 
@@ -69,15 +70,16 @@
 
 - Now it's ready! I act as the unsuspecting victim.. and click on the malicious .exe file.
 
+![image](https://github.com/user-attachments/assets/e517ba8a-e4d9-400d-a78b-aeeae1c51190)
 
-
-
-- Next, I launched the fake resume.pdf file. This should activate the payload in the Metasploit console!
+- Success! I can now remotely use the Windows 10 machine with my Kali console.
 
 ![image](https://github.com/user-attachments/assets/1233c93b-19e7-46f7-8563-98b827c6c788)
 
-- Immediately, I notice a Sysmon event regarding the 
+- Immediately, I notice a Sysmon event regarding a new connection with Event ID 3:
+  - In Splunk search, I do **index=main 192.168.68.117** and get related results.
 
+![image](https://github.com/user-attachments/assets/0e31539b-539a-44fc-94e5-e5e915ddcaed)
 
 ## Creating an Alert to detect Reverse Shell
 
