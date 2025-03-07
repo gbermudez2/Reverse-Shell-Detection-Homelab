@@ -18,6 +18,10 @@ This SOC Homelab project tested my knowledge on setting up a network of VMs and 
 - Sysmon for Windows Event Log enrichment.
 - Metasploit for simulating the reverse shell attack.
 
+### _Homelab Network Diagram_ ###
+![image](https://github.com/user-attachments/assets/e10f2898-57ce-4416-b421-56c7c395c820)
+
+
 ## Steps
 ### Setup
 - I used Virtual Box to set up **2 Virtual Machines:**
