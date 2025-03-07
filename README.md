@@ -51,6 +51,34 @@
 
 ![image](https://github.com/user-attachments/assets/b659d224-1c28-4209-9790-3c1c9f19f16e)
 
+- It's important that the proper alerts are forwarded to the Splunk SIEM.
+- Data Inputs > Local Rules > Import category to main index
+  - The main category we want is labeled "Security".
+ 
+## Payload Execution
+- In order to begin, I started up the Metasploit in the Kali Linux machine with _msfconsole_.
+
+![image](https://github.com/user-attachments/assets/47d68e1e-29ff-4499-8896-c87fd533f19c)
+
+- The parameters need to be set for the attacker machine to **listen** into activity on the victim machine.
+  - The IP and port remain the same from when the payload was made.
+ 
+![image](https://github.com/user-attachments/assets/3007db83-1e80-450d-9808-bcb07d6af24a)
+
+(_Almost forgot to start the handler. Whoops!_)
+
+- Now it's ready! I act as the unsuspecting victim.. and click on the malicious .exe file.
+
+
+
+
+- Next, I launched the fake resume.pdf file. This should activate the payload in the Metasploit console!
+
+![image](https://github.com/user-attachments/assets/1233c93b-19e7-46f7-8563-98b827c6c788)
+
+- Immediately, I notice a Sysmon event regarding the 
+
+
 ## Creating an Alert to detect Reverse Shell
 
 - It's important to note that this attack is detected by Sysmon as **T1571**, Non-Standard Port.
